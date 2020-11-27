@@ -71,10 +71,11 @@ public class TopLevelNetworkEntryPreferenceController extends BasePreferenceCont
         if (!TextUtils.isEmpty(dataUsageSummary)) {
             summaries.add(dataUsageSummary);
         }
-        if (mTetherPreferenceController.isAvailable()
-                && !TextUtils.isEmpty(hotspotSummary)) {
-            summaries.add(hotspotSummary);
-        }
+        
+        //if (mTetherPreferenceController.isAvailable()
+//                && !TextUtils.isEmpty(hotspotSummary)) {
+//            summaries.add(hotspotSummary);
+//        }
         return ListFormatter.getInstance().format(summaries);
     }
 }
